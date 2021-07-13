@@ -18,7 +18,7 @@ public class Cage<T extends Animal> {
 
     public void addToTheCage(T e) {
         Animal animal = (Animal) e;
-        if (this.size == animal.getCageSizeen()) {
+        if (this.size.equals(animal.getCageSizeen()) ) {
             cageSizeMap.put(animal.getAnimalId(), animal);
             System.out.println("Подопопечный по имени " + e.getName() + " помещен в вольер");
         } else {
